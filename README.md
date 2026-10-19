@@ -1,7 +1,5 @@
 # PRÁCTICA 1 - APACHE EN AMI AWS
 
-## 2. INSTALACIÓN DE APACHE
-
 #### PASO 1
 Actualizamos e instalamos Apache:
 
