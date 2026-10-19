@@ -75,6 +75,8 @@ En la carpeta de system32 para windows 11 tenemos que encontrar en driver/etc el
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/0d2230b9c5adcd47da2900a19c9733575271a3c4/Capturas/archivo_system32_hosts_editado.png)
 
+Es muy importante que para entrar usemos el bloc de notas abierto como administrador y en abrir entremos a la carpeta para sobreescribamos el archivo de hosts dándole a guardar como, si no, no funciona correctamente.
+
 ### PASO 8
 
 Creamos el directorio donde almacenaremos las imágenes públicas y configuramos sus permisos.
@@ -96,4 +98,3 @@ sudo nano /imagenespublicas/usuarios/usuario1/nombre_imagen.svg
 Modificamos el archivo .conf para poder recoger las imágenes
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/143ba0865cca88fab0efe9e60636118aaf76169f/Capturas/archivo_conf_modificado_para_imagenes.png)
-
