@@ -69,3 +69,8 @@ Y le pasamos los siguientes valores para que funcione correctamente:
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/bb31a14f4a1fbe7b7fe66146075a7315b5c0d87a/Capturas/archivo_conf.png)
 
+### PASO 7
+
+En la carpeta de system32 para windows 11 tenemos que encontrar en driver/etc el archivo hosts y editarlo con la ip pública de la EC2 y con los nombres de dominio necesarios:
+
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/0d2230b9c5adcd47da2900a19c9733575271a3c4/Capturas/archivo_system32_hosts_editado.png)
