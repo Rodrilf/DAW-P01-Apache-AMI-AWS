@@ -110,3 +110,93 @@ http://54.226.179.114/imagenes/El_Fary.svg
 Al estar configurado correctamente nos manda a:
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/87960d1d92f2f3edacbabd52d8d7745c3db08af6/Capturas/fary_svg_web.png)
+
+### PASO 12
+
+Vamos a configurar las páginas según el idioma, primero Español:
+
+```bash
+sudo nano /var/www/rodri/index.html.es
+```
+
+Y editamos el HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rodri - Español</title>
+</head>
+<body>
+    <h1>Bienvenido a Rodri.com</h1>
+    <p>Esta página está en español.</p>
+</body>
+</html>
+```
+
+Ahora en Inglés:
+
+```bash
+sudo nano /var/www/rodri/index.html.en
+```
+
+Y editamos de nuevo el HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rodri - English</title>
+</head>
+<body>
+    <h1>Welcome to Rodri.com</h1>
+    <p>This page is in English.</p>
+</body>
+</html>
+```
+
+### PASO 13
+
+Tenemos que editar de nuevo el VirtualHost para que funcione, entramos y lo editamos así:
+
+```
+<VirtualHost *:80>
+
+    # DOMINIOS
+    ServerName rodri.com
+    ServerAlias www.rodri.com rodri.es www.rodri.es
+
+    # DIRECTORIO PRINCIPAL
+    DocumentRoot /var/www/rodri
+
+    <Directory /var/www/rodri>
+        Options +MultiViews
+        Require all granted
+    </Directory>
+
+    # IDIOMAS
+    DirectoryIndex index.html
+    AddLanguage es .es
+    AddLanguage en .en
+
+    # IMAGENES PUBLICAS
+    Alias /imagenes/ /imagenespublicas/usuarios/usuario1/
+
+    <Directory /imagenespublicas/usuarios/usuario1>
+        Options +Indexes
+        Require all granted
+    </Directory>
+
+    # LOGS INDEPENDIENTES
+    ErrorLog /var/log/httpd/rodri_error.log
+    CustomLog /var/log/httpd/rodri_access.log combined
+
+</VirtualHost>
+```
+Importante renombrar el index porque si no, apache enseña esa en vez la de por idioma:
+
+```bash
+sudo mv /var/www/rodri/index.html /var/www/rodri/index.html.bak
+```
