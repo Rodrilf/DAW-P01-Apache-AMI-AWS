@@ -54,4 +54,18 @@ Y creamos la página principal:
 ```bash
 sudo nano /var/www/rodri/index.html
 ```
+Rellenamos con los datos que más nos interesen:
+
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/d4e00505d52bf5d7ab7ff01db82f2967c2e9962f/Capturas/virtual_host.png)
+
+### PASO 6
+
+Creamos el archivo de configuración:
+
+```bash
+sudo nano /etc/httpd/conf.d/rodri.conf
+```
+Y le pasamos los siguientes valores para que funcione correctamente:
+
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/bb31a14f4a1fbe7b7fe66146075a7315b5c0d87a/Capturas/archivo_conf.png)
+
