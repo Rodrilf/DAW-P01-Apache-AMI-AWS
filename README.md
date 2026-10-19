@@ -98,3 +98,15 @@ sudo nano /imagenespublicas/usuarios/usuario1/nombre_imagen.svg
 Modificamos el archivo .conf para poder recoger las imágenes
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/143ba0865cca88fab0efe9e60636118aaf76169f/Capturas/archivo_conf_modificado_para_imagenes.png)
+
+### PASO 11
+
+Probamos a acceder a:
+
+```
+http://54.226.179.114/imagenes/El_Fary.svg
+```
+
+Al estar configurado correctamente nos manda a:
+
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/87960d1d92f2f3edacbabd52d8d7745c3db08af6/Capturas/fary_svg_web.png)
