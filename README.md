@@ -19,3 +19,15 @@ sudo systemctl status httpd
 ```
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/2588b911950d819a2c31e7e8cdc24d307c631903/Capturas/Iniciado_y_arranque.png)
+
+#### PASO 3
+Creamos la página web por defecto en:
+
+```bash
+sudo nano /var/www/html/index.html
+```
+
+Y entramos para editar con el contenido de preferencia, por ejemplo:
+
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/cd687a5b9d93407384cbbaf3fc490a5126c407ee/Capturas/index_html.png)
+
