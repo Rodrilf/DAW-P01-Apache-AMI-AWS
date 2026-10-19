@@ -74,3 +74,26 @@ Y le pasamos los siguientes valores para que funcione correctamente:
 En la carpeta de system32 para windows 11 tenemos que encontrar en driver/etc el archivo hosts y editarlo con la ip pública de la EC2 y con los nombres de dominio necesarios:
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/0d2230b9c5adcd47da2900a19c9733575271a3c4/Capturas/archivo_system32_hosts_editado.png)
+
+### PASO 8
+
+Creamos el directorio donde almacenaremos las imágenes públicas y configuramos sus permisos.
+
+```bash
+sudo mkdir -p /imagenespublicas/usuarios/usuario1
+sudo chmod -R 755 /imagenespublicas
+```
+### PASO 9
+
+Creamos el archivo .svg (imagen convertida a svg) y pegamos su código XML para generar la imagen.
+
+```bash
+sudo nano /imagenespublicas/usuarios/usuario1/nombre_imagen.svg
+```
+
+### PASO 10
+
+Modificamos el archivo .conf para poder recoger las imágenes
+
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/143ba0865cca88fab0efe9e60636118aaf76169f/Capturas/archivo_conf_modificado_para_imagenes.png)
+
