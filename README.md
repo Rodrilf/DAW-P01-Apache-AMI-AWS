@@ -31,3 +31,13 @@ Y entramos para editar con el contenido de preferencia, por ejemplo:
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/cd687a5b9d93407384cbbaf3fc490a5126c407ee/Capturas/index_html.png)
 
+### PASO 4
+
+Comprobamos el funcionamiento en el navegador:
+
+```
+http://IP_PUBLICA
+```
+
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/1569fee9fb3734e9ec9a8fb550fc21874110b6dd/Capturas/http_ip_test.png)
+
