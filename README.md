@@ -41,3 +41,17 @@ http://IP_PUBLICA
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/1569fee9fb3734e9ec9a8fb550fc21874110b6dd/Capturas/http_ip_test.png)
 
+### PASO 5
+
+Crear el directorio de la web:
+
+```bash
+sudo mkdir -p /var/www/rodri
+```
+
+Y creamos la página principal:
+
+```bash
+sudo nano /var/www/rodri/index.html
+```
+![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/d4e00505d52bf5d7ab7ff01db82f2967c2e9962f/Capturas/virtual_host.png)
