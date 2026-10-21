@@ -71,11 +71,11 @@ Y le pasamos los siguientes valores para que funcione correctamente:
 
 ### PASO 7
 
-En la carpeta de system32 para windows 11 tenemos que encontrar en driver/etc el archivo hosts y editarlo con la ip pública de la EC2 y con los nombres de dominio necesarios:
+En la carpeta de System32 para Windows 11 tenemos que encontrar en **driver/etc** el archivo **hosts** y editarlo con la ip pública de la EC2 y con los nombres de dominio necesarios:
 
 ![image alt](https://github.com/Rodrilf/DAW-P01-Apache-AMI-AWS/blob/0d2230b9c5adcd47da2900a19c9733575271a3c4/Capturas/archivo_system32_hosts_editado.png)
 
-Es muy importante que para entrar usemos el bloc de notas abierto como administrador y en abrir entremos a la carpeta para sobreescribamos el archivo de hosts dándole a guardar como, si no, no funciona correctamente.
+Es muy importante que para entrar usemos el bloc de notas abierto como administrador y en la opción de **abrir** entremos a la carpeta y sobreescribamos el archivo de hosts dándole a guardar como, si no, no funciona correctamente.
 
 ### PASO 8
 
