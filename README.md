@@ -1,5 +1,8 @@
 # PRÁCTICA 1 - APACHE EN AMI AWS
 
+>[!NOTE]
+> Revisar conexión por línea de comandos a la consola de AWS.
+
 ### PASO 1
 Actualizamos e instalamos Apache:
 
